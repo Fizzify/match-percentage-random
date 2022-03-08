@@ -13,8 +13,20 @@ btn.addEventListener("click", (e) => {
   var matchScore = Math.floor(Math.random() * 100) + 1 + "%";
 
   if (matchScore > 70) {
-    alert(finalName + " and " + finalCrushName + " is a " + matchScore + " match! Fantastic, you are bound to be together!");
+    alert(
+      finalName +
+        " and " +
+        finalCrushName +
+        " is a " +
+        matchScore +
+        " match! Fantastic, you are bound to be together!"
+    );
   } else {
-    alert(finalName + " and " + finalCrushName + " is a " + matchScore + " match!");
+    alert(
+      finalName + " and " + finalCrushName + " is a " + matchScore + " match!"
+    );
   }
+
+  btn.innerHTML =
+    finalName + " and " + finalCrushName + " are a " + matchScore + " match!";
 });
