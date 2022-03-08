@@ -29,3 +29,15 @@ body {
   width: 1920px;
   z-index: -1;
 }
+
+
+.icon {
+    background-color: white;
+    padding: .2em;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.7;
+      }
+}
