@@ -19,21 +19,31 @@
       }
 
       #button {
-        background-color: #ff0000;
         text-decoration: none;
         color: white;
+        transition: 0.3s ease-in-out;
       }
 
       #button:hover {
         color: red;
       }
+
+      #particles-js {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 1920px;
+        z-index: -1;
+      }
     </style>
   </head>
   <body>
-    <div>
-      <a href="#" id="button"><h1>Click me!</h1></a>
-      <p>Check if you have a good percent match with your crush! ❤️</p>
-    </div>
+    <a href="#" id="button"><h1>Click me!</h1></a>
+    <p>Check if you have a good percent match with your crush! ❤️</p>
+    <div id="particles-js"></div>
     <script src="/app/js/index.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

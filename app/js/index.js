@@ -10,6 +10,7 @@ btn.addEventListener("click", (e) => {
   var crushName = crush.slice(0, 1).toUpperCase();
   var leftCrushName = crush.slice(1, crush.length).toLowerCase();
   var finalCrushName = crushName + leftCrushName;
+
   var matchScore = Math.floor(Math.random() * 100) + 1 + "%";
 
   if (matchScore > 70) {
